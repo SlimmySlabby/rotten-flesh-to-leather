@@ -1,0 +1,44 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Rotten Flesh to Leather",
+	"namespace": "ssrftl",
+	"authors": [
+		"SlimmySlabby"
+	],
+	"targetVersion": "1.21.60",
+	"description": "Allows cooking rotten flesh into leather",
+	"experimentalGameplay": {
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"dataDrivenJigsawStructures": false,
+		"aimAssist": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Rotten Flesh to Leather"
+				}
+			]
+		]
+	}
+}
